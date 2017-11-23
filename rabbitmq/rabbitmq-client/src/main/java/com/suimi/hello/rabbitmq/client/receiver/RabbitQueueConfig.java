@@ -128,6 +128,6 @@ public class RabbitQueueConfig {
 
     @Bean
     public Binding bindingTopic1() {
-        return BindingBuilder.bind(f()).to(topicExchange()).with("f.#");
+        return BindingBuilder.bind(f()).to(topicExchange()).with("f.#-1");
     }
 }

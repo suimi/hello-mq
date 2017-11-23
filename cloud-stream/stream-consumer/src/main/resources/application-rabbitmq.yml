@@ -8,6 +8,10 @@ spring:
     stream:
       rabbit:
         bindings:
+          in:
+            consumer:
+              bindQueue: true
+              bindingRoutingKey: test.#
           all:
             consumer:
               bindQueue: true

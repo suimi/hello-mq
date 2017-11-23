@@ -16,4 +16,4 @@ spring:
 #              bindQueue: true
 #              bindingRoutingKey: test.all
 #              requiredGroups: sca
-              routingKeyExpression: "'test.all'"
+              routingKeyExpression: "'test.all.'"

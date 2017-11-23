@@ -27,9 +27,9 @@ public class StreamProducerApplicationTests {
 
 //        sendService.sendAllMessage(new Message("hello stream"));
         for (int i = 0; i < 100; i++) {
-            sendService.sendAllMessage(new OneMessage(""+i, "value1"));
-            sendService.sendAllMessage(new OneMessage(""+i, "value2"));
-            sendService.sendAllMessage(new OneMessage(""+i, "value3"));
+            String key = ""+i;
+            sendService.sendAllMessage(new OneMessage(key, "value1"));
+            sendService.sendAllMessage(new OneMessage(key, "value2"));
         }
     }
 

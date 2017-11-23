@@ -19,8 +19,8 @@ public class RabbitmqServerApplicationTests {
 
     @Test
     public void send() {
-        sender.send("direct", "a", new Message("message"));
-        sender.send("direct", "a", new OneMessage("key","value"));
+//        sender.send("direct", "a", new Message("message"));
+//        sender.send("direct", "a", new OneMessage("key","value"));
 //        sender.send("direct", "b",  new Message("message"));
 //        sender.send("direct", "c",  new Message("message"));
 //        sender.send("header", "a",  new Message("message"));
@@ -30,8 +30,10 @@ public class RabbitmqServerApplicationTests {
 //        sender.send("fanout", "c",  new Message("message"));
 //        sender.send("fanout", "d",  new Message("message"));
 //        sender.send("topic", "e.as",  new Message("message"));
-//        sender.send("topic", "f.a",  new Message("message"));
-//        sender.send("topic", "f.s.e",  new Message("message"));
+        sender.send("topic", "f.a",  new Message("message"));
+        sender.send("topic", "f.s.e",  new Message("message"));
+        sender.send("topic", "f.s-1",  new Message("message"));
+        sender.send("topic", "f.s.e-1",  new Message("message"));
     }
 
     @Test
