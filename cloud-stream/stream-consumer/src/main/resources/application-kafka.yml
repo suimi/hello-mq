@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 192.168.6.164:32784,192.168.6.164:32785,192.168.6.164:32786
+          zk-nodes: 192.168.6.164:2188
+        bindings:
+          in:
+            consumer:
+              resetOffsets: true
+              startOffset: latest

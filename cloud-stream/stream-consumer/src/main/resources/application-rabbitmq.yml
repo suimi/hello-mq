@@ -1,0 +1,14 @@
+spring:
+  rabbitmq:
+    host: 192.168.6.164
+    port: 5672
+    username: user
+    password: pwd
+  cloud:
+    stream:
+      rabbit:
+        bindings:
+          all:
+            consumer:
+              bindQueue: true
+              bindingRoutingKey: test.#

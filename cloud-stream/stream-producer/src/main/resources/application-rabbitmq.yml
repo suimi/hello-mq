@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: 192.168.6.164
+    port: 5672
+    username: user
+    password: pwd
+  cloud:
+    stream:
+      rabbit:
+        bindings:
+          all:
+            producer:
+# bug: 当前版本对bindingRoutingKey不生效,2.0应该生效
+# 另外 routingKeyExpression的使用,须用 "'key'" 或 '''key'''
+#
+#              bindQueue: true
+#              bindingRoutingKey: test.all
+#              requiredGroups: sca
+              routingKeyExpression: "'test.all'"

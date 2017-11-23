@@ -1,0 +1,9 @@
+spring:
+  kafka:
+    bootstrap-servers: 192.168.6.164:32784,192.168.6.164:32785,192.168.6.164:32786
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+logging:
+  level:
+    org.springframework.kafka.support.LoggingProducerListener: debug

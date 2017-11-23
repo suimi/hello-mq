@@ -1,0 +1,10 @@
+
+spring:
+  kafka:
+    bootstrap-servers: 192.168.6.164:32784,192.168.6.164:32785,192.168.6.164:32786
+    consumer:
+      group-id: foo
+      auto-offset-reset: latest
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer<com.suimi.hello.mq.dto.Message>
+server:
+  port: 8082

@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        out:
+          destination: stream
+        all:
+          destination: stream
+          producer:
+            partitionKeyExpression: payload.key
+            partitionCount: 2
+logging:
+  level:
+    com.suimi.hello: debug
+    org.springframework: debug
