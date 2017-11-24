@@ -11,8 +11,8 @@ spring:
           in:
             consumer:
               bindQueue: true
-              bindingRoutingKey: test.#
+              bindingRoutingKey: test.#.
           all:
             consumer:
               bindQueue: true
-              bindingRoutingKey: test.#
+              bindingRoutingKey: all.#

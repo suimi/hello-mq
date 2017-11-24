@@ -8,7 +8,7 @@ spring:
           destination: stream
           producer:
             partitionKeyExpression: payload.key
-            partitionCount: 2
+            partitionCount: 3
 logging:
   level:
     com.suimi.hello: debug

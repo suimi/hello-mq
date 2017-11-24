@@ -13,8 +13,8 @@ import com.suimi.hello.stream.producer.service.SendService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-//@ActiveProfiles("kafka")
-@ActiveProfiles("rabbitmq")
+@ActiveProfiles("kafka")
+//@ActiveProfiles("rabbitmq")
 public class StreamProducerApplicationTests {
 
     @Autowired
