@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: bus-rabbitmq
+  cloud:
+    bus:
+      destination: rabbitmq
+      trace:
+        enabled: true
+logging:
+  level:
+    org.springframework: info
+management:
+  security:
+    enabled: false
