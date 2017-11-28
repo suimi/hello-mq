@@ -1,0 +1,3 @@
+logging:
+  level:
+    com.suimi.hello: debug
